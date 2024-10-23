@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="560.0" prefWidth="1096.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#273c75" height="71.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="1102.0" />
+      <Label layoutX="497.0" layoutY="18.0" text="Add Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="30.0" layoutY="109.0" prefHeight="25.0" prefWidth="231.0" promptText="ID" />
+      <TextField layoutX="30.0" layoutY="153.0" prefHeight="25.0" prefWidth="231.0" promptText="Name" />
+      <TextField layoutX="30.0" layoutY="339.0" prefHeight="25.0" prefWidth="231.0" promptText="Price" />
+      <ComboBox layoutX="30.0" layoutY="200.0" prefHeight="25.0" prefWidth="231.0" promptText="Catagory" />
+      <TextField layoutX="30.0" layoutY="379.0" prefHeight="25.0" prefWidth="231.0" promptText="Quantity" />
+      <ComboBox layoutX="30.0" layoutY="249.0" prefHeight="25.0" prefWidth="231.0" promptText="Size" />
+      <Button layoutX="30.0" layoutY="432.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #44bd32;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="191.0" layoutY="432.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #40739e;" text="Edit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="487.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #273c75;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="191.0" layoutY="487.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #e84118;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ComboBox layoutX="30.0" layoutY="294.0" prefHeight="25.0" prefWidth="231.0" promptText="Supplier" />
+      <TableView layoutX="313.0" layoutY="113.0" prefHeight="200.0" prefWidth="752.0">
+        <columns>
+          <TableColumn prefWidth="91.0" text="ID" />
+          <TableColumn prefWidth="114.0" text="Name" />
+            <TableColumn prefWidth="126.0" text="Catagory" />
+            <TableColumn prefWidth="77.0" text="Size" />
+            <TableColumn prefWidth="158.0" text="Supplier " />
+            <TableColumn prefWidth="92.0" text="Price" />
+            <TableColumn prefWidth="92.0" text="Quantity" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

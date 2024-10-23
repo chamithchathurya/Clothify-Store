@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="579.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserDashbordController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b1464" height="579.0" stroke="BLACK" strokeType="INSIDE" width="174.0" />
+      <Label layoutX="37.0" layoutY="24.0" text="Clothify" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUserName" layoutX="37.0" layoutY="331.0" prefHeight="17.0" prefWidth="101.0" text="Hi Chamith" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="176.0" fitWidth="160.0" layoutX="8.0" layoutY="105.0" pickOnBounds="true">
+         <image>
+            <Image url="@/images/download.png " />
+         </image>
+      </ImageView>
+      <Button layoutX="8.0" layoutY="397.0" mnemonicParsing="false" onAction="#btnAddSupplierOnAction" prefHeight="39.0" prefWidth="160.0" text="Add Supplier">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="8.0" layoutY="456.0" mnemonicParsing="false" onAction="#btnAddItemOnAction" prefHeight="39.0" prefWidth="160.0" text="Add Item">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
